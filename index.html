@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Hungry people</title>
+</head>
+<body>
+
+    
+    
+     
+
+    <section id="top" class="section top"> 
+        <div class="container">
+            <header class="header">
+            <div class="header__inner">                
+                <a class="header__link" href="#top">home</a> 
+                <a class="header__link" href="#about">about</a>
+                <a class="header__link" href="#team">team</a>
+                <a class="header__link" href="#booking">booking</a>                
+                <a class="header__logo" href="#top"><img src="img/logo.png" alt=""></a>                
+                <a class="header__link" href="#menu">menu</a>
+                <a class="header__link" href="#galery">galery</a>
+                <a class="header__link" href="#events">events</a>
+                <a class="header__link" href="#contacts">contacts</a>                   
+            </div>                       
+            </header>      
+                 
+            <div class="top__inner">
+                <div class="top__week">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</div>
+                <div class="top__info">
+                    <div class="top__suptitle">RESTAURANT</div>
+                    <h1 class="top__title">hungry people</h1> 
+                    <div class="top__btns">
+                        <button class="top__btn" href="#">BOOK TABLE</button>
+                        <button class="top__btn top__btn--right" href="#">EXPLORE</button>
+                    </div>   
+                </div>
+                <div class="top__social">
+                    <img class="top__social-icon" src="img/facebook.svg" alt="">
+                    <img class="top__social-icon" src="img/twitter.svg" alt="">
+                    <img class="top__social-icon" src="img/instagram.svg" alt="">
+                </div>                           
+            </div>
+        
+            <div class="scroll-btn">
+            <a href="#about">
+                <img src="img/down-btn.svg" alt="#">
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about">        
+            <div class="container">
+                <div class="about__inner"> 
+                    <div class="about__info">
+                        <div class="section__title">about us</div>
+                        <div class="section__suptitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Morbi non ultrices ligula.</div>
+                        <div class="about__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                    </div> 
+                    <div class="section__img">
+                        <img src="img/about-img-new.png" alt="">
+                    </div>  
+                </div><!--inner-->
+            </div>         
+    </section>
+
+    <section id="team" class="section team">        
+        <div class="container">
+            <div class="team__top-text">our team</div>                
+            <div class="team__inner">
+                <div class="section__img section__img--left">
+                    <img src="img/team-img-new.png" alt="">
+                </div> 
+                <div class="team__info">
+                    <div class="section__title section__title--dark">master chef</div>
+                    <div class="section__suptitle section__suptitle--dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Morbi non ultrices ligula.</div>
+                    <div class="section__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                </div>                                   
+            </div>                
+        </div>              
+    </section>
+
+    <section id="booking" class="section booking">        
+        <div class="container">
+            <div class="booking__inner">
+                <div class="booking__info">
+                    <h1 class="section__title section__title--booking">book a table</h1>
+                    <form action="" class="booking__form">
+                        <input class="booking__input" type="text" placeholder="Name" >
+                        <input class="booking__input" type="text" placeholder="Email" >
+                        <input class="booking__input" type="text" placeholder="Phone" >
+                        <input class="booking__input" type="select" placeholder="People" >
+                        <input class="booking__input" type="datetime" placeholder="Date(mm/dd)" >
+                        <input class="booking__input" type="select" placeholder="Time" >
+                    </form>                    
+                    <button class="booking-btn" type="submit">book now</button>
+                </div>
+                <div class="section__img">
+                    <img src="img/booking-img-new.png" alt="">
+                </div>
+            </div> 
+            <div class="booking__week">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458 782</div>  
+        </div>
+    </section>
+
+    <section id="specialties" class="section specialties">
+        <div class="container">
+            <div class="specialties__top-text">specialties</div> 
+            <div class="specialties__inner">
+
+                <div id="vueapp">
+                    <swiper ref="swiperComponent" :options="swiperOptions" @click-slide="onSwiperClickSlide" @set-translate="onSetTranslate">
+                      <swiper-slide>
+                        <div class="slider-box">
+                          <div class="section__img section__img--left">
+                            <img src="../img/specialties-img-new.png" alt="">
+                          </div> 
+                          <div class="specialties__info">
+                            <div class="section__title section__title--dark">chcolate pancakes zero</div>
+                            <div class="section__suptitle section__suptitle--dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Morbi non ultrices ligula.</div>
+                            <div class="section__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                          </div>       
+                        </div>
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="slider-box">
+                          <div class="section__img section__img--left">
+                            <img src="img/specialties-img-new.png" alt="">
+                          </div> 
+                          <div class="specialties__info">
+                            <div class="section__title section__title--dark">chcolate pancakes one</div>
+                            <div class="section__suptitle section__suptitle--dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Morbi non ultrices ligula.</div>
+                            <div class="section__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                          </div>       
+                        </div>
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="slider-box">
+                          <div class="section__img section__img--left">
+                            <img src="img/specialties-img-new.png" alt="">
+                          </div> 
+                          <div class="specialties__info">
+                            <div class="section__title section__title--dark">chcolate pancakes two</div>
+                            <div class="section__suptitle section__suptitle--dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Morbi non ultrices ligula.</div>
+                            <div class="section__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                          </div>       
+                        </div>
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="slider-box">
+                          <div class="section__img section__img--left">
+                            <img src="img/specialties-img-new.png" alt="">
+                          </div> 
+                          <div class="specialties__info">
+                            <div class="section__title section__title--dark">chcolate pancakes three</div>
+                            <div class="section__suptitle section__suptitle--dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Morbi non ultrices ligula.</div>
+                            <div class="section__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                          </div>       
+                        </div>
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="slider-box">
+                          <div class="section__img section__img--left">
+                            <img src="img/specialties-img-new.png" alt="">
+                          </div> 
+                          <div class="specialties__info">
+                            <div class="section__title section__title--dark">chcolate pancakes four</div>
+                            <div class="section__suptitle section__suptitle--dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Morbi non ultrices ligula.</div>
+                            <div class="section__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                          </div>       
+                        </div>
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="slider-box">
+                          <div class="section__img section__img--left">
+                            <img src="img/specialties-img-new.png" alt="">
+                          </div> 
+                          <div class="specialties__info">
+                            <div class="section__title section__title--dark">chcolate pancakes five</div>
+                            <div class="section__suptitle section__suptitle--dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Morbi non ultrices ligula.</div>
+                            <div class="section__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                          </div>       
+                        </div>
+                      </swiper-slide>
+                      <div class="swiper-pagination"  slot="pagination"></div>                      
+                    </swiper>     
+                  </div> 
+
+            </div>                                             
+        </div><!--.container-->
+    </section>
+
+    <section id="menu" class="section menu">        
+        <div class="container">
+            <div class="menu__inner">                          
+                 <div class="section__title section__title--menu">delicious menu</div>   
+                 <div class="section__suptitle section__suptitle--menu">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nulla!</div>
+                 <nav class="menu__nav">
+                     <a class="menu__nav-link" href="#">soupe</a>
+                     <a class="menu__nav-link" href="#">pizza</a>
+                     <a class="menu__nav-link" href="#">pasta</a>
+                     <a class="menu__nav-link" href="#">desert</a>
+                     <a class="menu__nav-link" href="#">wine</a>
+                     <a class="menu__nav-link" href="#">beer</a>
+                     <a class="menu__nav-link" href="#">drinks</a>
+                 </nav>
+                 <div class="menu__items">
+                     <div class="menu__item">
+                         <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                         <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                     </div>
+                     <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                    <div class="menu__item">
+                        <h6 class="menu__dish">pizza quatro stagioni .... 55,68 usd</h6>                     
+                        <div class="menu__composition">Integer ullamcorper neque eu pupus euismod</div>
+                    </div>
+                     
+                 </div>
+            </div>             
+        </div>
+    </section>
+
+    <section id="events" class="section events">        
+        <div class="container">
+            <div class="specialties__top-text">private events</div>
+            <div class="events__inner">                          
+                <div class="section__img section__img--left">
+                    <img src="img/events-img2-new.png" alt="">
+                </div> 
+                <div class="section__img">
+                    <img src="img/events-img-new.png" alt="">
+                </div> 
+            </div>
+            <div class="events__bottom-text">For private events please call: +40 729 131 637/+40 726 458 782 or use the contact form.</div>             
+        </div>
+    </section>
+
+    <section id="gallery" class="section gallery">      
+        <div class="gallery__inner">                          
+            <div class="gallery__img"><img src="img/gallery-1.png" alt=""></div>
+            <div class="gallery__img"><img src="img/gallery-2.png" alt=""></div>
+            <div class="gallery__img"><img src="img/gallery-3.png" alt=""></div>
+            <div class="gallery__img"><img src="img/gallery-4.png" alt=""></div>
+        </div>             
+    </section>
+
+    <section id="contacts" class="section contacts">        
+        <div class="container">
+            <div class="contacts__inner">                          
+                <h1 class="section__title section__title--contacts">contacts</h1>   
+                <h3 class="section__suptitle section__suptitle--contacts">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nulla!</h3>
+                <form class="contacts__form" action="submit">
+                    <input class="contacts__input" type="text" placeholder="Name">
+                    <input class="contacts__input" type="email" placeholder="Email">
+                    <input class="contacts__input" type="phone" placeholder="Phone">
+                </form>
+                <textarea class="contacts__form-interest" rows="10" action="" placeholder="Message"></textarea>
+                <div class="contacts__info">                    
+                    <div class="contacts__link"><a href="#"><img src="img/icon-map-marker.svg" alt="">5th London Boulevard, U.K.</a></div>
+                    <div class="contacts__link"><a href="#"><img src="img/icon-phone.svg" alt="">+40 729 131 637</a></div>
+                    <div class="contacts__link"><a href="#"><img src="img/icon-mail.svg" alt="">office@mindblister.com</a></div>
+                    <button class="contacts__btn">send message</button>
+                </div>
+            </div>             
+        </div>
+    </section>
+
+    <section id="map" class="section map">        
+        <div class="container">
+            <div class="map__inner">                          
+                    
+            </div>             
+        </div>
+    </section>
+
+    <footer class="footer">    
+        <div class="container">
+            <div class="footer__inner">
+                © Copyright Mindblister  2022
+            </div>  
+        </div>            
+    </footer>
+
+    <script src="js/script.min.js"></script>
+</body>
+</html>
